@@ -1,0 +1,101 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  color: #04c3ff;
+  text-align: right;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  color: rgb(35, 35, 35);
+  text-align: right;
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: -2px;
+  font-family: "Oswald", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+#description {
+  letter-spacing: 1.5px;
+ color: rgb(35, 35, 35);
+}
+
+#description::first-letter {
+  text-transform: capitalize;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #04c3ff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 2px rgba(110, 109, 109, 0.393);
+  background: linear-gradient(to bottom, #b4d9ff 0%, white 30%);
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 20px;
+  float: left;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: rgb(35, 35, 35);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px; /* піднімає вгору units C and F*/
+}
+
+.weather-temperature a {
+  text-decoration: none;
+  color: #04c3ff;
+}
+.weather-temperature .active {
+  color: rgb(35, 35, 35);
+  cursor: default;
+}
+
+small a {
+  color: #04c3ff;
+}
+
+.fa-solid {
+  padding-right: 15px;
+  color: #04c3ff;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dd67ef4b2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <!-- обертає контейнер з погодою та підпис автора -->
+        <div class="weather-app">
+          <!-- обертає весь блок погоди -->
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Search for a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <!-- обертає перший рядок назва міста, дата, характристика погоди Clear -->
+            <h2 id="country"></h2>
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <!-- обертає другий рядок іконка погоди, температура, характристики погоди  -->
+            <div class="col-6">
+              <!-- обертає перший стовпчик- іконка погоди і температура  -->
+              <div class="clearfix weather-temperature">
+                <img src="" alt="" id="icon" />
+                <div>
+                  <strong id="temperature"></strong>
+                  <span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <!-- обертає другий стовпчик- характеристики погоди  -->
+              <ul>
+                <li>
+                  <i class="fa-solid fa-droplet"></i>Humidity:
+                  <span id="humidity"></span> %
+                </li>
+                <li>
+                  <i class="fa-solid fa-wind"></i>Wind:
+                  <span id="wind"></span> km/h
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <small>
+          This project was coded by MaIn and is
+          <a href="https://github.com/Inna021180/weather" target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="" target="_blank">hosted on Netlify</a>
+        </small>
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
