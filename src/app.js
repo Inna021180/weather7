@@ -103,7 +103,10 @@ function search(city) {
   let apiKey = "e8f3f8fd8f9c1boc90f3t90b496a9fb6";
   //let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   axios.get(apiUrl).then(displayTemperature);
+  
 }
 
 function handleSubmit(event) {
